@@ -2,22 +2,51 @@ h1{
     text-align: center;
     line-height: 1.5;
     letter-spacing: 3px;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
 }
+
 h2{
     text-align: center;
     color: #006EB6;
+    border-bottom:2px solid rgba(183, 180, 180, 0.42);
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 3px;
 }
+
 p{
     text-align: left;
+    line-height: 1.5;
 }
+
 #italic{
     text-align: left;
+    font-style: italic;
 }
+
 ol{
     text-align: left;
+    line-height: 1.5;
 }
+
+li{
+    margin-bottom: 15px;
+}
+
 #content{
     max-width: 600px;
-    
+    margin: 0 auto;
+    border: 2px solid hwb(0 71% 28% / 0.62);
+    padding: 30px 90px 30px 90px;
+}
+
+img{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
