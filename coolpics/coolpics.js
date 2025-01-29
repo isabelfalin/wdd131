@@ -2,6 +2,14 @@ function showMenu() {
     var element = document.getElementById("nav");
     element.classList.toggle("show");
 }
+function viewerTemplate(fileName, altText){
+    let viewerTemplate = `<div id="viewerspecial" class="viewer">
+        <button id="close-button" class="close-viewer">X</button>
+        <img src="${fileName}" alt="${altText}">
+      </div>`;
+
+    return viewerTemplate;
+}
 
 
 function viewHandler(event) {
@@ -18,12 +26,9 @@ function viewHandler(event) {
     fileName = fileName + "-full.jpeg"
 
 	// insert the viewerTemplate into the top of the body element
-    let viewerTemplate = `<div id="viewerspecial" class="viewer">
-        <button id="close-button" class="close-viewer">X</button>
-        <img src="${fileName}" alt="alt description">
-      </div>`;
+    let viewerHtml = viewerTemplate(fileName, image.alt);
 
-	document.body.insertAdjacentHTML("afterbegin", viewerTemplate)
+	document.body.insertAdjacentHTML("afterbegin", viewerHtml)
 
 	// add a listener to the close button (X) that calls a function called closeViewer when clicked
 
