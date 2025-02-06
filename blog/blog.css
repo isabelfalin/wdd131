@@ -1,0 +1,27 @@
+header{
+    font-family: Roboto, 'Times New Roman', Times, serif;
+}
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#first-book{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#septimus-book{
+    font-family: Roboto, 'Times New Roman', Times, serif;
+}
+div p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div h2{
+    font-family: Roboto, 'Times New Roman', Times, serif;
+}
+
+#magnus-book{
+    font-family: Roboto, 'Times New Roman', Times, serif;
+}
+#filters{
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
