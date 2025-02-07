@@ -1,13 +1,33 @@
 header{
     font-family: Roboto, 'Times New Roman', Times, serif;
-    color: #A39A92;
+    /* color: #A39A92;
     color: #77685D;
-    color: #483D3F;
+    color: #483D3F; */
     color: #058ED9;
 }
+
+h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 34px;
+}
+li{
+    list-style: none;
+
+}
+
+li a{
+    text-decoration: none;
+    color: #058ED9;
+    font-weight: bold;
+}
+
 nav{
     font-family: Arial, Helvetica, sans-serif;
+    border-top: #77685D solid 2px;
+    border-bottom: #77685D solid 2px;
 }
+
 #first-book{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,9 +35,11 @@ nav{
 #septimus-book{
     font-family: Roboto, 'Times New Roman', Times, serif;
 }
+
 div p{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 div h2{
     font-family: Roboto, 'Times New Roman', Times, serif;
 }
@@ -25,8 +47,37 @@ div h2{
 #magnus-book{
     font-family: Roboto, 'Times New Roman', Times, serif;
 }
+
 #filters{
     font-family: Roboto, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
+nav ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: end;
+    justify-items: end;
+    grid-column-gap: 30px;
+    padding-right: 80px;
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.book{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.skiptocontent a {
+	position: absolute;
+	top: -40px;
+	text-align: left;
+	background-color: #058ED9;
+    color: white;
+}
+
+.skiptocontent a:focus {
+	top: 0px;
+}
