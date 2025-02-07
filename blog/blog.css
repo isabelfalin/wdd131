@@ -1,5 +1,9 @@
 header{
     font-family: Roboto, 'Times New Roman', Times, serif;
+    color: #A39A92;
+    color: #77685D;
+    color: #483D3F;
+    color: #058ED9;
 }
 nav{
     font-family: Arial, Helvetica, sans-serif;
@@ -25,3 +29,4 @@ div h2{
     font-family: Roboto, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
+
