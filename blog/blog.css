@@ -1,5 +1,4 @@
 header{
-    font-family: Roboto, 'Times New Roman', Times, serif;
     /* color: #A39A92;
     color: #77685D;
     color: #483D3F; */
@@ -23,34 +22,25 @@ li a{
 }
 
 nav{
-    font-family: Arial, Helvetica, sans-serif;
     border-top: #77685D solid 2px;
     border-bottom: #77685D solid 2px;
-}
-
-#first-book{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#septimus-book{
-    font-family: Roboto, 'Times New Roman', Times, serif;
 }
 
 div p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div h2{
-    font-family: Roboto, 'Times New Roman', Times, serif;
-}
-
-#magnus-book{
-    font-family: Roboto, 'Times New Roman', Times, serif;
+h2{
+    color: #058ED9;
+    
 }
 
 #filters{
-    font-family: Roboto, 'Times New Roman', Times, serif;
     font-weight: bold;
+    border: #058ED9 2px solid;
+    padding: 10px;
+    margin-top: 40px;
+    margin-right: 80px;
 }
 
 nav ul{
@@ -66,10 +56,22 @@ main{
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+
+.book-info{
+    text-align: right;
+    margin-right: 10px;
+}
+
 .book{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin: 40px 0;
 }
+.book-details{
+    border-left: #058ED9 2px solid;
+    padding: 10px;
+}
+
 .skiptocontent a {
 	position: absolute;
 	top: -40px;
@@ -80,4 +82,13 @@ main{
 
 .skiptocontent a:focus {
 	top: 0px;
+}
+
+.book img{
+    display: block;
+    margin: 0 auto;
+}
+
+body{
+    font-family: Roboto, Helvetica, sans-serif;
 }
