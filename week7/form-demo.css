@@ -33,3 +33,33 @@
   .hide {
     display: none; /* Initially hide the credit card input and label */
   }
+
+  input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 30px;
+  }
+  form{
+    display: block;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  label{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  textarea{
+    width: 100%;
+    height: 35spx;
+    margin-bottom: 30px;
+  }
+  select{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 30px;
+  }
+  input[type=submit]{
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+  }

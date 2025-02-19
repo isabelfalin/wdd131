@@ -12,7 +12,40 @@
     <header><h1>Checkout</h1></header>
     <main>
       <section class="errors"></section>
-      <form id="checkoutForm" action="completed.html"></form>
+      <form id="checkoutForm" action="completed.html">
+          <label for="fname">Full Name:</label><br>
+          <input type="text" id="fname" name="fname" required><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br>
+
+          <label for="address">Address:</label><br>
+          <textarea type="text" id="address" name="address" required>
+
+          </textarea><br>
+
+          <label for="payment">Payment Method:</label><br>
+          <select id="payment" name="payment">
+            <option value="credit">Credit Card</option>
+            <option value="pay-pal">PayPal</option>
+          </select><br>
+
+          <label class="hide" for="credit">Credit Card Number:</label><br>
+          <input class="hide" type="text" id="credit" name="credit" 
+          required pattern="[0-9]{16}"
+          title="Enter a 16 digit credit card number"
+          placeholder="Enter 16 Digits"><br>
+
+          <label class="hide" for="pay-pal">PayPal Number:</label><br>
+          <input class="hide" type="number" id="pay-pal" name="pay-pal" required
+          placeholder="Enter PayPal Username"><br>
+
+          <input type="submit" value="Place Order" required>
+
+
+                  
+      
+      </form>
     </main>
   </body>
 </html>
