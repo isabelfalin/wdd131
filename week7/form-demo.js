@@ -9,7 +9,21 @@ function validateForm(event) {
     // start by assuming the form is valid.
     let isValid = true;
     // add our validations here
-  
+    const fname = document.getElementById("fname");
+    if (fname.value != "Bob" ){
+      isValid = false;
+      errors.push("That is not the right name.")
+    }
+
+    const paymentMethod = document.getElementById("payment");
+    if (paymentMethod.value == "credit"){
+      const credit = document.getElementById("credit");
+      if (credit.value != "1234123412341234" ){
+        isValid = false;
+        errors.push("That is not a valid credit card number.")
+      }  
+    }
+    
     // if we ran into any problems above valid will be false.
     if (!isValid) {
       //stop the form from being submitted
@@ -22,19 +36,31 @@ function validateForm(event) {
   }
   
   function togglePaymentDetails(e) {
-    // get a reference to the form. We can access all the named form inputs through the form element.
-    const theForm = ;
-    // we will also need the creditCardContainer and paypalUsernameContainer
-    const creditCardContainer = ;
-    const paypalContainer = ;
-  
-    // Hide payment containers by adding the '.hide' class to each of them
-  
-    // Disable required for payment fields...if we hide a required field the browser will throw an error when we try to submit!
-  
-  
-    // Show the container based on the selected payment method, and add the required attribute back.
-  
+    const creditLabel = document.getElementById("credit-label");
+    const creditInput = document.getElementById("credit");
+    const payPalLabel = document.getElementById("paypal-label");
+    const payPalInput = document.getElementById("paypal");
+
+    if (e.target.value == "credit"){
+      creditLabel.classList.remove("hide")
+      creditInput.classList.remove("hide")
+
+      payPalInput.classList.add("hide")
+      payPalLabel.classList.add("hide")
+
+      creditInput.required = true
+      payPalInput.required = false
+    }
+    else {
+      creditLabel.classList.add("hide")
+      creditInput.classList.add("hide")
+
+      payPalInput.classList.remove("hide")
+      payPalLabel.classList.remove("hide")
+
+      creditInput.required = false
+      payPalInput.required = true
+    }
   }
   
   // helper function to display our errors.
@@ -44,6 +70,12 @@ function validateForm(event) {
     errorEl.innerHTML = html.join("");
   }
   // attach a change event handler to the paymentMethod input
-  
+  const payment = document.getElementById("payment");
+  payment.addEventListener("change", togglePaymentDetails);
+
   // attach a submit event handler to the form
+  const checkoutForm = document.getElementById("checkoutForm");
+  checkoutForm.addEventListener("submit", validateForm);
+
+
   

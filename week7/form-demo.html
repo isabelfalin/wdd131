@@ -27,17 +27,17 @@
           <label for="payment">Payment Method:</label><br>
           <select id="payment" name="payment">
             <option value="credit">Credit Card</option>
-            <option value="pay-pal">PayPal</option>
+            <option value="paypal">PayPal</option>
           </select><br>
 
-          <label class="hide" for="credit">Credit Card Number:</label><br>
-          <input class="hide" type="text" id="credit" name="credit" 
+          <label id="credit-label" for="credit">Credit Card Number:</label><br>
+          <input type="text" id="credit" name="credit" 
           required pattern="[0-9]{16}"
           title="Enter a 16 digit credit card number"
           placeholder="Enter 16 Digits"><br>
 
-          <label class="hide" for="pay-pal">PayPal Number:</label><br>
-          <input class="hide" type="number" id="pay-pal" name="pay-pal" required
+          <label id="paypal-label" class="hide" for="paypal">PayPal Username:</label><br>
+          <input class="hide" type="text" id="paypal" name="paypal"
           placeholder="Enter PayPal Username"><br>
 
           <input type="submit" value="Place Order" required>
