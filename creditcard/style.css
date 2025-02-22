@@ -1,0 +1,12 @@
+form{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+#front{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    background-color: gray;
+    border-radius: 10px;
+
+}
