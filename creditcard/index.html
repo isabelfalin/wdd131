@@ -19,33 +19,35 @@
             </div>
 
             <div id="row2">
-                <label id="credit-label" for="credit">Card Number:</label><br>
+                <label id="credit-label" for="credit">Card Number:</label>
                 <input type="text" id="credit" name="credit" 
                 required pattern="[0-9]{16}"
                 title="Enter a 16 digit credit card number"
-                placeholder="Enter 16 Digits"><br>
+                placeholder="Enter 16 Digits">
             </div>
 
             <div id="row3">
-                <label for="cardholder">Card Holder</label><br>
-                <input type="text" id="cardholder" name="cardholder" required
-                placeholder="Full Name"><br>
+                <label id="cardholder" for="cardholder">Card Holder</label>
+                <input type="text" id="holder" name="cardholder" required
+                placeholder="Full Name">
                 
-                <label id="experationmonth" for="experation">Experation M</label><br>
-                <input type="number" id="experationmonth" name="experationmonth" required
-                placeholder="MM"><br/>
+                <label id="experationmonth" for="experation">Experation</label>
+                <input type="text" id="month" name="experationmonth" required maxlength="2"
+                placeholder="MM">
 
-                <label id="experationyear" for="experation">Experation Y</label><br>
-                <input type="number" id="experationyear" name="experationyear" required
-                placeholder="YY"><br/>
+                <input type="text" id="year" name="experationyear" required maxlength="2"
+                placeholder="YY">
             </div>
             
         </div>
         <div id="back">
-            <label id="cvc" for="cvc">CVC/CVV</label><br>
-            <input type="number" id="cvc" name="cvc" required
-            placeholder="XXX"><br/>
-            
+            <div id="blackstripe"></div>
+            <div id="backrow1">
+                <label id="cvc" for="cvc">CVC/CVV</label>
+                <input type="number" id="cvc" name="cvc" required
+                placeholder="XXX">
+            </div>
+        
         </div>
             <button>Submit</button>
     </form>
