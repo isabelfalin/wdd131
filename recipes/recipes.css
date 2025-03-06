@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: "Amatic SC";
+    }
+
+#bar img{
+    width: 30px;
+    margin: 0px 10px;
+}
+#bar{
+    display: flex;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin: 20px 40px;
+}
+#searchbar{
+    width: calc(100% - 40px);
+    height: 30px;
+    font-size: 16px;
+    padding: 4px;
+    border: 1px black solid;
+}
+
+
+footer img{
+    width: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px;
+    align-items: center;
+}
+
+#main-content img{
+    width: 300px;
+    margin: 15px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+header img{
+    display: block;
+}
+#main-content{
+    margin: 0px 40px;
+    padding: 10px;
+    border: 2px black solid;
+    border-radius: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+}
+
+#main-content div{
+    padding: 10px;
+    flex-direction: column;
+}
+
+#main-content h3 {
+    font-size: 22px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-content h1{
+    margin: 0px;
+    color: #1B98E0;
+    font-family: "Amatic SC", Arial, Helvetica, sans-serif;
+}
+
+
+#main-content p{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    footer{
+        flex-direction: column-reverse;
+    }
+  
+  }
+   
