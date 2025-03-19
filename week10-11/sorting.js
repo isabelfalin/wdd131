@@ -77,16 +77,16 @@ function compareFn(a,b) {
   // a must be equal to b
   return 0;
   }
-// const anotherSort = simpleList.sort(compareFn)
+const anotherSort = simpleList.sort(compareFn)
 
-// function searchList(list, query) {
-//   function searchCallback(string) {
-//     return string.toLowerCase().includes(query.toLowerCase());
-//   }
-//   return list.filter(searchCallback);
-// }
-// console.log(searchList(simpleList, "b"));
-// console.log(searchList(simpleList, "an"));
+function searchList(list, query) {
+  function searchCallback(string) {
+    return string.toLowerCase().includes(query.toLowerCase());
+  }
+  return list.filter(searchCallback);
+}
+console.log(searchList(simpleList, "b"));
+console.log(searchList(simpleList, "an"));
 
 function searchList(list, q) {
   function searchCallback(item) {
