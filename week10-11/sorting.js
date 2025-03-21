@@ -66,7 +66,8 @@ const hikes = [
       trailhead: [43.78555, -111.98996]
     }
   ];
-   const simpleList = ["oranges", "grapes", "lemons", "apples", "Bananas", "watermelons", "coconuts", "broccoli", "mango"];
+
+const simpleList = ["oranges", "grapes", "lemons", "apples", "Bananas", "watermelons", "coconuts", "broccoli", "mango"];
 
 function compareFn(a,b) {
   if (a > b) {
@@ -77,31 +78,41 @@ function compareFn(a,b) {
   // a must be equal to b
   return 0;
   }
+
 const anotherSort = simpleList.sort(compareFn)
+console.log(anotherSort);
 
-function searchList(list, query) {
-  function searchCallback(string) {
-    return string.toLowerCase().includes(query.toLowerCase());
+function searchList(theList, theQuery){
+  function searchCallBack(theString){
+    if(theString.toLowerCase().includes(theQuery.toLowerCase())){
+      return true;
+    }
+    else{
+      return false;
+    }
   }
-  return list.filter(searchCallback);
-}
-console.log(searchList(simpleList, "b"));
-console.log(searchList(simpleList, "an"));
 
-function searchList(list, q) {
-  function searchCallback(item) {
-    return (
-      item.name.toLowerCase().includes(q.toLowerCase()) ||
-      item.description.toLowerCase().includes(q.toLowerCase()) ||
-      item.tags.find((tag) => tag.toLowerCase().includes(q.toLowerCase()))
-    );
-  }
-  const filtered = list.filter(searchCallback);
-
-  const sorted = filtered.sort((a, b) => a.distance > b.distance);
-  return sorted;
-}
-console.log(searchList(hikes, "yellowstone"));
-console.log(searchList(hikes, "moderate"));
-console.log(searchList(hikes, "al"));
+  return theList.filter(searchCallBack);
   
+}
+
+const filterList = searchList(simpleList, "b");
+console.log(filterList);
+
+function searchHikes(theList, theQuery){
+  function searchCallBack(theHike){
+    if(theHike.name.toLowerCase().includes(theQuery.toLowerCase()) ||
+    theHike.description.toLowerCase().includes(theQuery.toLowerCase()) ||
+    theHike.tags.find(tag => tag.toLowerCase().includes(theQuery.toLowerCase()) )){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+
+  return theList.filter(searchCallBack);
+  
+}
+const filteredHikes = searchHikes(hikes, "al");
+console.log(filteredHikes);
