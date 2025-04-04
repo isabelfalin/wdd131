@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C8 Homepage</title>
+    <!-- CSS for carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://kit.fontawesome.com/d1276cdc53.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+
+<body>
+    <header> 
+        <a id="logo_link" href="home.html">
+            <img class="logo" src="images/LogoWhite.png" alt="C8 Logo"> 
+        </a>
+        <nav>
+            <a class="active" href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="models.html"><i class="fa-solid fa-timeline"></i> Models</a>
+        </nav>
+        <section id="hero-msg">
+            <h2 class="destinations-title">The C8 Corvette </h2>
+            <h4>A Bold Leap Forward in Design, Power,
+                and Precision Engineering.</h4>
+        </section>
+    
+        <div class="main-carousel">
+            <img class="carousel-cell" src="images/blueCarousel.webp" alt="car 1">
+            <img class="carousel-cell" src="images/RedCarousel.jpg" alt="car 2">
+            <img class="carousel-cell" src="images/orange.jpg.avif" alt="car 3">
+            <img class="carousel-cell" src="images/blueChild.jpg" alt="car 4">
+            <img class="carousel-cell" src="images/C81.jpg.webp" alt="car 5">
+        </div>
+    </header>
+<main>
+    
+
+    <h1 id="europe-title">Models</h1>
+
+    <section class="msg">
+        <div class="container">
+            <h2>Different C8 Corvette Models</h2>
+            <p>The C8 Corvette is a revolutionary sports car, boasting a mid-engine layout, offering supercar-level 
+                performance at an accessible price, and available as both a coupe and convertible. From the Z06 model
+                to the classic C8 Corvette Stingray, this website has all the information on the different models that
+                you need to know.</p>
+            <a class="history-button" href="models.html">Models</a>
+        </div>
+        <img class="snowboarder" src="images/C84.jpg.avif" alt="C8 Corvette">
+    </section>
+
+   
+</main>
+    <footer>
+        <img src="images/thepeakslogo.png" alt="The Peaks Logo">
+        <div id="footer-navigation">
+            <p>The Peaks &copy; 2024 - Isabel Falin</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="home.html">Home</a></p>
+        </div>
+      </footer>
+        <!-- JavaScript for carousel -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+        <script>
+            var flkty = new Flickity( '.main-carousel', {
+                // options
+                draggable: false, 
+                wrapAround: true,
+                autoPlay: true
+
+             });
+        </script>
+    </body>
+    </html>
