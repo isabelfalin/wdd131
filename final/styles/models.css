@@ -1,6 +1,6 @@
 header{
     display: grid;
-    grid-template-rows: 157px auto auto;
+    grid-template-rows: 157px 157px auto;
     grid-template-columns: 157px 1fr ;
 }
 
@@ -18,6 +18,9 @@ header .logo{
     
    
 }
+#hero-title{
+    margin: 0px;
+}
 
 #logo-link{
     grid-row: 1/2;
@@ -32,16 +35,14 @@ header .logo{
     object-fit: cover;
     width: 100%;
     filter: brightness(70%);
+  
 
 }
 
-.little-blue-highlight{
-    color: #2A73C7;
-}
 nav a{
     font-size: 30px;
     font-weight: 600;
-    font-family: "kanit", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: white;
     display: block;
     height: 28px;
@@ -56,7 +57,7 @@ header h1{
     grid-column: 1/4;
     justify-self: center;
     color: white;
-    font-family: "kanit", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 60px;
     font-weight: 600;
 }
@@ -70,12 +71,12 @@ header h4{
     font-size: 24px;
     color: white;
     font-weight: 500;
-    font-family: "fira sans", Arial, Helvetica, sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 h2{
     margin-left: 100px;
-    font-family: "kanit", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: #DB162F;
     font-size: 40px;
 }
@@ -83,12 +84,12 @@ h2{
 h4{
     margin-left: 100px;
     margin-right: 150px;
-    font-family: "fira sans", Arial, Helvetica, sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-weight: 425;
 }
 
-#early-beginnings-img, #modern-stingray{
+#background-img, #modern-stingray{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -96,13 +97,10 @@ h4{
    
 }
 
-#impact-legacy{
-  
-}
 
 #impact-legacy h2{
     margin-left: 100px;
-    font-family: "kanit", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: #DB162F;
     font-size: 40px;
 }
@@ -115,14 +113,14 @@ h4{
     padding-bottom: 40px;
 }
 
-#rise-snowboarding-img{
+#z06-img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 1140px;
 }
 
-#snowboarding-modern-img{
+#e-ray-img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -149,14 +147,14 @@ footer{
     font-size: 24px;
     text-decoration: none;
     color: black;
-    font-family: "fira sans", Arial, Helvetica, sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
 
 
 }
 #footer-navigation p a{
     text-decoration: none;
     color: black;
-    font-family: "fira sans", Arial, Helvetica, sans-serif;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 footer img{

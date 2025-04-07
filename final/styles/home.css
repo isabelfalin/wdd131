@@ -123,53 +123,7 @@ h4{
     font-size: 22px;
     font-weight: 425;
 }
-#zermatt-switzerland-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: #2A73C7 5px solid;
-}
 
-#chamonix-france-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: #2A73C7 5px solid;
-}
-
-#st-anton-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px;
-    border: #2A73C7 5px solid;
-}
-
-#lake-tahoe-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: #2A73C7 5px solid;
-    width: 700px
-}
-
-#park-city-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: #2A73C7 5px solid;
-    width: 700px
- 
-}
-
-#whistler-blackcomb-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: #2A73C7 5px solid;
-    width: 700px
-
-}
 
 footer{
     display: grid;
@@ -238,7 +192,7 @@ a:hover, #footer-navigation p a:hover{
     grid-column: 2/3;
     grid-row: 1/2;
     z-index: -1;
-    width: 900px;
+    width: 600px;
 }
 
 .msg .container{
