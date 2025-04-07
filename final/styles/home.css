@@ -154,7 +154,7 @@ footer{
 
 }
 #footer-navigation p a{
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
     font-family: "lato", Arial, Helvetica, sans-serif;
 }
