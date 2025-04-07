@@ -18,7 +18,7 @@ header{
 
 #hero-msg h2{
     font-size: 60px;
-    font-family: "kanit", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: white;
     margin-top: 0;
     text-align: center;
@@ -32,10 +32,6 @@ nav{
     grid-column: 1/4;
     z-index: 50;
     color: white;
-}
-
-#home, #models, #siteplan{
-    padding: 15px;
 }
 
 header .logo{
@@ -67,7 +63,7 @@ header .logo{
 nav a{
     font-size: 30px;
     font-weight: 600;
-    font-family: "kanit", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: white;
     display: block;
     height: 28px;
