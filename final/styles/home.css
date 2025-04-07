@@ -17,11 +17,11 @@ header{
 }
 
 #hero-msg h2{
-    font-size: 42px;
+    font-size: 60px;
     font-family: "kanit", Arial, Helvetica, sans-serif;
     color: white;
     margin-top: 0;
-    align-self: center;
+    text-align: center;
     margin-left: 0;
 }
 
@@ -34,10 +34,14 @@ nav{
     color: white;
 }
 
+#home, #models, #siteplan{
+    padding: 15px;
+}
+
 header .logo{
     object-fit: cover;
     width: 100%;
-   
+    margin-left: 20px;
 }
 
 .main-carousel{
@@ -89,6 +93,10 @@ header h4{
     font-weight: 500;
     font-family: "fira sans", Arial, Helvetica, sans-serif;
 }
+#msg h2 a{
+    color: #DB162F;
+    text-decoration: underline;
+}
 
 #msg h4{
     margin-left: 100px;
@@ -98,7 +106,6 @@ header h4{
     font-weight: 425;
 }
 
-
 p{
     margin-left: 100px;
     margin-right: 150px;
@@ -106,13 +113,20 @@ p{
     font-size: 22px;
     font-weight: 425;
 }
-a{
-    
+
+h2{
+    text-align: left;
+    margin-left: 100px;
+    color: #DB162F;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 600;
 }
+
 
 h1{
     text-align: center;
-    color: #DB162F;
+    color: black;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 60px;
     font-weight: 600;
@@ -139,14 +153,14 @@ footer{
     font-size: 24px;
     text-decoration: none;
     color: black;
-    font-family: "fira sans", Arial, Helvetica, sans-serif;
+    font-family: "lato", Arial, Helvetica, sans-serif;
 
 
 }
 #footer-navigation p a{
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
-    font-family: "fira sans", Arial, Helvetica, sans-serif;
+    font-family: "lato", Arial, Helvetica, sans-serif;
 }
 
 footer img{
