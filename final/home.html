@@ -29,12 +29,8 @@
                 and Precision Engineering.</h4>
         </section>
     
-        <div class="main-carousel">
-            <img class="carousel-cell" src="images/blueCarousel.png" alt="car 1">
-            <img class="carousel-cell" src="images/RedCarousel.jpg" alt="car 2">
-            <img class="carousel-cell" src="images/orange.jpg.avif.png" alt="car 3">
-            <img class="carousel-cell" src="images/blueChild.jpg" alt="car 4">
-            <img class="carousel-cell" src="images/C81.png" alt="car 5">
+        <div id="carousel" class="main-carousel">
+            
         </div>
     </header>
 <main>
@@ -72,23 +68,26 @@
 </main>
     <footer>
         <img src="images/Logo.png" alt="C8 Logo">
-        <div id="footer-navigation">
             <p>See the 8 &copy; 2024 - Isabel Falin</p>
             <p><a href="site-plan.html">Site Plan</a></p>
             <p><a href="home.html">Home</a></p>
-        </div>
-      </footer>
+    </footer>
+        <script type="module" src="scripts/final.js"></script>
         <!-- JavaScript for carousel -->
+        
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
         <script>
-            var flkty = new Flickity( '.main-carousel', {
-                // options
-                draggable: false, 
-                wrapAround: true,
-                autoPlay: true
+            document.addEventListener("DOMContentLoaded", function(e){
 
-             });
+                var flkty = new Flickity( '.main-carousel', {
+                    // options
+                    draggable: false, 
+                    wrapAround: true,
+                    autoPlay: true
+
+                });
+            });
         </script>
     </body>
     </html>
