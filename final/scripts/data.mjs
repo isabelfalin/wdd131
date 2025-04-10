@@ -1,6 +1,6 @@
 const cars = [
     {
-        "img": "images/blueCarousel.png",
+        "img": "images/blueCarousel.jpg",
         "alt": "car 1"
     },
     {
@@ -8,7 +8,7 @@ const cars = [
         "alt": "car 2"
     },
     {
-        "img": "images/orange.jpg.avif.png",
+        "img": "images/orange.jpg",
         "alt": "car 3"
     },
     {
@@ -16,7 +16,7 @@ const cars = [
         "alt": "car 4"
     },
     {
-        "img": "images/C81.png",
+        "img": "images/C81.jpg",
         "alt": "car 5"
     }
 ]
